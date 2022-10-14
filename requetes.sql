@@ -49,5 +49,5 @@ SELECT * FROM `film` WHERE MONTH(`date_sortie`) = 6
 
 --10]--
 --Récupérez tous les utilisateurs dont le role est user et qui ont postés des commentaires--
-SELECT * FROM `user` WHERE `role` = 'user' AND `id` IN (SELECT `id_user` FROM `commentaire`)
+SELECT * FROM `user` WHERE `role` = '1' AND `id` IN (SELECT `id_user` FROM `commentaire`)
  
